@@ -1,8 +1,19 @@
 
 
-.characterDetail {
+.characterCard {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    justify-content: center;
+}
+
+.characterCard img {
+    width: 375px;
+    height: 375px;
+    border-radius: 50%;
+}
+
+.botonVolver {
+    position: absolute;
 }

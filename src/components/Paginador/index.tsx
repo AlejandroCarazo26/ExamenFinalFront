@@ -20,7 +20,7 @@ const Paginador = ({ page, totalPages, setPage }: Props) => {
             .filter(p => p >= 1 && p <= totalPages)
             .sort((a, b) => a - b)
 
-        return all
+        return all;
     }
 
     const pages = getPages()
@@ -40,7 +40,7 @@ const Paginador = ({ page, totalPages, setPage }: Props) => {
 
                 return (
                     <span key={p}>
-                        {showDots && <span className="dots">...</span>}
+                        {showDots && <span className="dots"> ... </span>}
                         <button
                             onClick={() => setPage(p)}
                             className={p === page ? "pageActive" : ""}

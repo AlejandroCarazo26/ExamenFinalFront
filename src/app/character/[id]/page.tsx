@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import { Character } from "@/app/types"
 import { api } from "@/api/api"
+import "./page.css"
 
 const PageCharacterDetail = () => {
     const { id } = useParams()
@@ -33,7 +34,7 @@ const PageCharacterDetail = () => {
 
             {character && (
                 <div className="characterCard">
-                    <button onClick={() => router.back()}>Volver</button>
+                    <button className="buttonVolver" onClick={() => router.back()}>Volver</button>
                     <img src={character.image} alt={character.name}/>
                     <h1>{character.name}</h1>
                     <p>ID: {character.id}</p>

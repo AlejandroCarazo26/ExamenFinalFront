@@ -1,28 +1,28 @@
 "use client"
 
+import "./style.css"
+
 type Props = {
     status: string,
-    setStatus: React.Dispatch<React.SetStateAction<string>>
+    setStatus: (value: string) => void
 }
-
-const statuses = ["", "Alive", "Dead", "unknown"]
 
 const FilterStatus = ({ status, setStatus }: Props) => {
 
     const handleClick = () => {
-        const currentIndex = statuses.indexOf(status)
-        const nextIndex = (currentIndex + 1) % statuses.length
-        setStatus(statuses[nextIndex])
+        if (status === "") setStatus("Alive")
+        else if (status === "Alive") setStatus("Dead")
+        else if (status === "Dead") setStatus("unknown")
+        else setStatus("")
     }
 
     return (
         <div className="filterStatus">
-            <button onClick={handleClick}>
+            <button className="buttonStatus" onClick={handleClick}>
                 Estado: {status || "Todos"}
             </button>
         </div>
-        
     )
 }
 
-export default FilterStatus;
+export default FilterStatus

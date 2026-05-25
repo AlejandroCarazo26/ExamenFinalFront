@@ -11,9 +11,23 @@
     gap: 50px;
 }
 
-.searchResults {
+.searchInput {
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-size: 17px;
+}
+
+.searchButton{
+    position: absolute;
+    top: 43px;
+    left: 295px;
+    padding:10px 21px;
+    border:none;
+    border-radius:25px;
+    background:red;
+    color:white;
+    font-size: 15px;
+    font-weight:bold;
+    cursor:pointer;
 }

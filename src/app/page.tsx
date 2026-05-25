@@ -28,7 +28,7 @@ const Home = () => {
     api.get(`/character/?page=${page}&name=${search}&status=${status}&gender=${gender}`)
       .then((res) => {
         const data: ResultCharacters = res.data;
-        setCharacters(data.results.slice(0, 10));
+        setCharacters(data.results.slice(0, 20));
         setTotalPages(data.info.pages);
       })
       .catch((e) => {
@@ -49,7 +49,6 @@ const Home = () => {
     if (e.key === "Enter") handleBuscar();
   }
 
-  // resetear página cuando cambia un filtro
   useEffect(() => {
     setPage(1);
   }, [status, gender])

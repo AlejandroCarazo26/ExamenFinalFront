@@ -3,3 +3,22 @@
 .filterStatus {
     padding: 10px;
 }
+
+.buttonStatus{
+    position: fixed;
+
+    top: 20px;
+    right: 150px;
+
+    width: 120px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
