@@ -16,9 +16,12 @@ const FilterStatus = ({ status, setStatus }: Props) => {
     }
 
     return (
-        <button onClick={handleClick}>
-            Estado: {status || "Todos"}
-        </button>
+        <div className="filterStatus">
+            <button onClick={handleClick}>
+                Estado: {status || "Todos"}
+            </button>
+        </div>
+        
     )
 }
 

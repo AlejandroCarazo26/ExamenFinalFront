@@ -1,5 +1,7 @@
 "use client"
 
+import "./style.css"
+
 type Props = {
     gender: string,
     setGender: React.Dispatch<React.SetStateAction<string>>
@@ -16,9 +18,12 @@ const FilterGender = ({ gender, setGender }: Props) => {
     }
 
     return (
-        <button onClick={handleClick}>
-            Género: {gender || "Todos"}
-        </button>
+        <div className="filterGender">
+            <button className="buttonGender" onClick={handleClick}>
+                Género: {gender || "Todos"}
+            </button>
+        </div>
+        
     )
 }
 

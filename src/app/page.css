@@ -1,0 +1,19 @@
+.MainPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.searchResults {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+}

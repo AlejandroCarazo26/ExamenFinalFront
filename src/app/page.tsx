@@ -1,13 +1,13 @@
 "use client"
 
-import "./page.css"
 import { useEffect, useState } from "react";
-import { Character, ResultCharacters } from "./app/types";
+import { Character, ResultCharacters } from "./types";
 import { api } from "@/api/api";
 import FilterStatus from "@/components/FilterStatus";
 import FilterGender from "@/components/FilterGender";
 import Paginador from "@/components/Paginador";
-import CharacterChulo from "./components/Character";
+import CharacterChulo from "../components/Character";
+import "./page.css"
 
 const Home = () => {
 

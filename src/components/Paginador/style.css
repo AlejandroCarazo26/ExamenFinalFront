@@ -1,0 +1,14 @@
+
+
+.containerPaginador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.pageActive {
+    font-weight: bold;
+    border: 2px solid black;
+}

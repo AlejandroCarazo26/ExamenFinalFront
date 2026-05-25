@@ -1,7 +1,7 @@
 "use client"
 
+import "./style.css"
 
-import "./styles.css"
 
 type Props = {
     page: number,
@@ -61,4 +61,4 @@ const Paginador = ({ page, totalPages, setPage }: Props) => {
     )
 }
 
-export default Paginador
+export default Paginador;
