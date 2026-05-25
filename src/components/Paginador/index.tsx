@@ -16,9 +16,7 @@ const Paginador = ({ page, totalPages, setPage }: Props) => {
         const last = [totalPages - 2, totalPages - 1, totalPages]
         const current = [page]
 
-        const all = [...new Set([...first, ...current, ...last])]
-            .filter(p => p >= 1 && p <= totalPages)
-            .sort((a, b) => a - b)
+        const all = [...new Set([...first, ...current, ...last])].filter(p => p >= 1 && p <= totalPages).sort((a, b) => a - b)
 
         return all;
     }
